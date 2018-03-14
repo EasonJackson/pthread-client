@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6FDBA2062059C7980065B65D /* OnlineChat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OnlineChat; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FDBA2062059C7980065B65D /* OnlineChatClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OnlineChatClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FDBA2092059C7990065B65D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		6FDBA1FD2059C7980065B65D = {
 			isa = PBXGroup;
 			children = (
-				6FDBA2082059C7980065B65D /* OnlineChat */,
+				6FDBA2082059C7980065B65D /* OnlineChatClient */,
 				6FDBA2072059C7980065B65D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		6FDBA2072059C7980065B65D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FDBA2062059C7980065B65D /* OnlineChat */,
+				6FDBA2062059C7980065B65D /* OnlineChatClient */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FDBA2082059C7980065B65D /* OnlineChat */ = {
+		6FDBA2082059C7980065B65D /* OnlineChatClient */ = {
 			isa = PBXGroup;
 			children = (
 				6FDBA2092059C7990065B65D /* main.c */,
 			);
-			path = OnlineChat;
+			path = OnlineChatClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FDBA2052059C7980065B65D /* OnlineChat */ = {
+		6FDBA2052059C7980065B65D /* OnlineChatClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FDBA20D2059C7990065B65D /* Build configuration list for PBXNativeTarget "OnlineChat" */;
+			buildConfigurationList = 6FDBA20D2059C7990065B65D /* Build configuration list for PBXNativeTarget "OnlineChatClient" */;
 			buildPhases = (
 				6FDBA2022059C7980065B65D /* Sources */,
 				6FDBA2032059C7980065B65D /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = OnlineChat;
+			name = OnlineChatClient;
 			productName = OnlineChat;
-			productReference = 6FDBA2062059C7980065B65D /* OnlineChat */;
+			productReference = 6FDBA2062059C7980065B65D /* OnlineChatClient */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FDBA2012059C7980065B65D /* Build configuration list for PBXProject "OnlineChat" */;
+			buildConfigurationList = 6FDBA2012059C7980065B65D /* Build configuration list for PBXProject "OnlineChatClient" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FDBA2052059C7980065B65D /* OnlineChat */,
+				6FDBA2052059C7980065B65D /* OnlineChatClient */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +248,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FDBA2012059C7980065B65D /* Build configuration list for PBXProject "OnlineChat" */ = {
+		6FDBA2012059C7980065B65D /* Build configuration list for PBXProject "OnlineChatClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FDBA20B2059C7990065B65D /* Debug */,
@@ -257,7 +257,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FDBA20D2059C7990065B65D /* Build configuration list for PBXNativeTarget "OnlineChat" */ = {
+		6FDBA20D2059C7990065B65D /* Build configuration list for PBXNativeTarget "OnlineChatClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FDBA20E2059C7990065B65D /* Debug */,

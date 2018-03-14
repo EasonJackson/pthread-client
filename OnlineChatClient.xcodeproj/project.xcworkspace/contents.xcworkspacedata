@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OnlineChat.xcodeproj">
+      location = "self:/Users/easonjackson/Udacity - OS/OnlineChatClient/OnlineChatClient.xcodeproj">
    </FileRef>
 </Workspace>
