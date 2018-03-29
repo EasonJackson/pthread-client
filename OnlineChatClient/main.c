@@ -14,33 +14,33 @@
 # include <netdb.h>
 
 # define SERVER_ADDRESS "localhost"
-# define SERVER_PORT 8000
-# define NUMBER_OF_THREADS 2
+# define SERVER_PORT 8080
+# define CLIENT_PORT 8000
 
-int* read_from_server() {
-    return 0;
-}
+void* read_from_server(char[], int*, int*);
+void* write_to_server(char[], int*, int*);
 
-void* write_to_server() {
-
-    return NULL;
-}
-
+static const ssize_t BUFFER_SIZE = 1024;
+static char sendmessage[BUFFER_SIZE];
+static char recvmessage[BUFFER_SIZE];
 
 int main(int argc, const char * argv[]) {
     
-    pthread_t thread_pool[NUMBER_OF_THREADS];
-    int thread_args[NUMBER_OF_THREADS];
-    int result_code;
+    pthread_t read_thread, write_thread;
+    struct sockaddr_in server_address;
+    struct sockaddr_in client_address;
     
     // Initialize threads
     
-    thread_args[0] = 0;
-    result_code = pthread_create(&thread_pool[0], NULL, read_from_server, &thread_args[0]);
-    thread_args[1] = 1;
-    result_code = pthread_create(&thread_pool[1], NULL, write_to_server, &thread_args[1]);
     
-    struct sockaddr_in server_address;
+    if (0 > (pthread_create(&read_thread, NULL, read_from_server, NULL))) {
+        fprintf(stderr, "Cannot create new thread.");
+    }
+    
+    if (0 > (pthread_create(&write_thread, NULL, write_to_server, NULL))) {
+        fprintf(stderr, "Cannot create new thread.");
+    }
+    
     int sock, valread;
     struct hostent *host_ent = gethostbyname(SERVER_ADDRESS);
     char lh = host_ent -> h_name;
@@ -48,8 +48,15 @@ int main(int argc, const char * argv[]) {
     // Try to connect to server
     
     
-    while (1) {
-        
-    }
+    pthread_join(read_thread, NULL);
+    pthread_join(write_thread, NULL);
     return 0;
+}
+
+void* read_from_server() {
+    return NULL;
+}
+
+void* write_to_server() {
+    return NULL;
 }
